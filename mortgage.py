@@ -30,9 +30,9 @@ def infer_mortgage_numbers(body, interest, payment):
 
 if __name__ == '__main__':
     config = read_config()
-    interest_percentage = config.get('interest_percentage', 10)
-    mortgage_body_initial = config.get('mortgage_body_initial', 100)
-    monthly_payment = config.get('monthly_payment', 10)
+    interest_percentage = config['interest_percentage']
+    mortgage_body_initial = config['mortgage_body_initial']
+    monthly_payment = config['monthly_payment']
 
     data = []
 
