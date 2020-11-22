@@ -47,7 +47,7 @@ if __name__ == '__main__':
         )
 
         duration = len(body_per_month)
-        overhead = monthly_payment * (duration - 1) + (body_per_month[-2]) - mortgage_body_initial
+        overhead = sum(interests_payed)
         data.append([f'{interest_p:.2f}', duration, f'{int(overhead / 1e3)}'])
 
     data.insert(0, ["Процент", "Срок кредита", "Переплата, тысячи"])
